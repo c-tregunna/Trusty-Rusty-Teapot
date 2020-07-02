@@ -1,0 +1,13 @@
+@media (min-width:992px) {
+
+    .breakfast
+    {
+      border-right:1px solid #cdcdcd!important
+      }
+      .tea
+    {
+      border-left:1px solid #cdcdcd!important
+      }
+
+
+    }

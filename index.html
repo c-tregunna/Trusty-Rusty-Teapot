@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Trusty Rusty Teapot Teashop</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info py-4 fixed-top">
+        <a class="navbar-brand order-1 mr-0" href="#">
+            <img src="img/teapot_icon_126656.png" width="60" height="60" alt="">
+        </a>
+        <h2 class="navbar-brand order-1 mr-0 ml-3 d-none d-lg-block">Trusty Rusty Teapot Teashop</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link px-4 text-dark" href="#about">About <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link px-4 text-dark" href="#">Menu</a>
+            <a class="nav-item nav-link px-4 text-dark" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <!-- /navigation -->
+      <!-- Jumbotron -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/teapot.jpg" alt="Trusty Rusty Teapot">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/eggs.jpg" alt="Poached eggs and salmon">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/food.jpg" alt="Lunch tarts">
+          </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/cake.jpg" alt="LSlice of chocolate cake">
+            </div>
+        </div>
+      </div>
+      <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="text-center font-weight-bold display-2 mb-4">Trusty Rusty Teapot Teashop</h1>
+          <hr>
+          <h3 class="text-center font-weight-normal mt-4">Tea served in a pot will hit the spot</h3>
+        </div>
+      </div> -->
+      <!-- /jumbotron -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col border-bottom pb-5">
+                <h4 class="mb-4" id="about">About the Trusty Rusty Teapot Teashop</h4>
+                <p>Dessert cookie I love. Cookie apple pie chocolate cake lollipop icing bear claw. Apple pie biscuit oat cake biscuit sesame snaps cake jelly marshmallow. Cookie chocolate bar biscuit topping tiramisu jelly beans danish.</p>
+
+                <Bonbon>Jelly-o chocolate bar I love donut. Soufflé croissant cookie cake cotton candy. Caramels cupcake chocolate bar.</p>
+
+                <p>Bonbon I love marshmallow muffin tiramisu. Liquorice ice cream I love lollipop lollipop icing pastry I love pastry. I love pudding fruitcake. Biscuit topping sweet roll croissant sweet dragée croissant.</p>
+            </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-lg breakfast">
+              <h5>Breakfast</h5>
+            <p>Cotton candy tart chupa chups candy sweet muffin. Jujubes croissant jelly-o pastry I love. Topping powder cookie. Pie pie cupcake I love.</p>
+
+            <p>I love I love tootsie roll. Marshmallow chocolate chupa chups sugar plum danish tart sesame snaps wafer fruitcake. Marshmallow candy canes biscuit</p>
+            <button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#breakfast">Breakfast Menu</button>
+
+          </div>
+          <div class="col-lg">
+            <h5>Lunch</h5>
+            <p>Cotton candy tart chupa chups candy sweet muffin. Jujubes croissant jelly-o pastry I love. Topping powder cookie. Pie pie cupcake I love.</p>
+
+            <p>I love I love tootsie roll. Marshmallow chocolate chupa chups sugar plum danish tart sesame snaps wafer fruitcake. Marshmallow candy canes biscuit</p>
+            <button type="button" class="btn btn-outline-info btn-block" data-target="#lunch">Lunch Menu</button>
+          </div>
+          <div class="col-lg tea">
+            <h5>Afternoon Tea</h5>
+            <p>Cotton candy tart chupa chups candy sweet muffin. Jujubes croissant jelly-o pastry I love. Topping powder cookie. Pie pie cupcake I love.</p>
+
+            <p>I love I love tootsie roll. Marshmallow chocolate chupa chups sugar plum danish tart sesame snaps wafer fruitcake. Marshmallow candy canes biscuit</p>
+            <button type="button" class="btn btn-outline-info btn-block" data-target="#afternoon">Afternoon Tea Menu</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODALS -->
+
+  <div class="modal fade" id="breakfast" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Our Yummy Breakfasts</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Bacon Sandwich
+                  <span class="badge badge-pill py-2">£4.50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Poached Eggs on toast
+                  <span class="badge badge-pill">£5.50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Eggs Benedict
+                  <span class="badge badge-pill">£7.50</span>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    $('.carousel').carousel({
+        interval: 4000
+    })
+</script>
+</body>
+</html>
