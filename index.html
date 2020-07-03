@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Trusty Rusty Teapot Teashop</title>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<body data-spy="scroll" data-target=".navbar">
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-info py-4 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info py-2 fixed-top">
         <a class="navbar-brand order-1 mr-0" href="#">
             <img src="img/teapot_icon_126656.png" width="60" height="60" alt="">
         </a>
@@ -27,7 +27,7 @@
       </nav>
       <!-- /navigation -->
       <!-- Jumbotron -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="500">
+      <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="500">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="img/teapot.jpg" alt="Trusty Rusty Teapot">
@@ -42,14 +42,14 @@
                 <img class="d-block w-100" src="img/cake.jpg" alt="LSlice of chocolate cake">
             </div>
         </div>
-      </div>
-      <!-- <div class="jumbotron jumbotron-fluid">
+      </div> -->
+      <div class="jumbotron jumbotron-fluid mt-5">
         <div class="container">
-          <h1 class="text-center font-weight-bold display-2 mb-4">Trusty Rusty Teapot Teashop</h1>
+          <h1 class="header text-center font-weight-bold display-3 my-4 text-white">Trusty Rusty Teapot Teashop</h1>
           <hr>
           <h3 class="text-center font-weight-normal mt-4">Tea served in a pot will hit the spot</h3>
         </div>
-      </div> -->
+      </div>
       <!-- /jumbotron -->
     <div class="container mt-5">
         <div class="row">
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="row pt-4">
-          <div class="col-lg breakfast">
+          <div class="col-lg breakfast my-4">
               <h5>Breakfast</h5>
             <p>Cotton candy tart chupa chups candy sweet muffin. Jujubes croissant jelly-o pastry I love. Topping powder cookie. Pie pie cupcake I love.</p>
 
@@ -71,24 +71,24 @@
             <button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#breakfast">Breakfast Menu</button>
 
           </div>
-          <div class="col-lg">
+          <div class="col-lg lunch my-4">
             <h5>Lunch</h5>
             <p>Cotton candy tart chupa chups candy sweet muffin. Jujubes croissant jelly-o pastry I love. Topping powder cookie. Pie pie cupcake I love.</p>
 
             <p>I love I love tootsie roll. Marshmallow chocolate chupa chups sugar plum danish tart sesame snaps wafer fruitcake. Marshmallow candy canes biscuit</p>
-            <button type="button" class="btn btn-outline-info btn-block" data-target="#lunch">Lunch Menu</button>
+            <button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#lunch">Lunch Menu</button>
           </div>
-          <div class="col-lg tea">
+          <div class="col-lg tea my-4">
             <h5>Afternoon Tea</h5>
             <p>Cotton candy tart chupa chups candy sweet muffin. Jujubes croissant jelly-o pastry I love. Topping powder cookie. Pie pie cupcake I love.</p>
 
             <p>I love I love tootsie roll. Marshmallow chocolate chupa chups sugar plum danish tart sesame snaps wafer fruitcake. Marshmallow candy canes biscuit</p>
-            <button type="button" class="btn btn-outline-info btn-block" data-target="#afternoon">Afternoon Tea Menu</button>
+            <button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#afternoon">Afternoon Tea Menu</button>
           </div>
         </div>
       </div>
 
-      <!-- MODALS -->
+      <!-- MODALS Breakfast-->
 
   <div class="modal fade" id="breakfast" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -118,6 +118,68 @@
       </div>
     </div>
   </div>
+
+        <!-- MODALS Lunch-->
+
+        <div class="modal fade" id="lunch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Our Wonderful Light Lunches</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Smoked salmon and dill tart
+                        <span class="badge badge-pill py-2">£7.95</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Ceaser salad
+                        <span class="badge badge-pill">£6.95</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Homemade beef burger and fries
+                        <span class="badge badge-pill">£7.50</span>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- MODALS Dinner-->
+
+      <div class="modal fade" id="afternoon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Our delectable Afternoon Tea</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Trusty Rusty Teapot Scone, clotted cream and jam
+                      <span class="badge badge-pill py-2">£5.50</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Trusty Rusty Teapot Scone and slice of cake
+                      <span class="badge badge-pill">£8.95</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Trusty Rusty Teapot full Afternoon Tea
+                      <span class="badge badge-pill">£12.50</span>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

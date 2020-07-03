@@ -1,13 +1,41 @@
+.jumbotron {
+  background: linear-gradient(0deg, #f7f5f0, 20%, transparent),
+              url('../img/teapot.jpg') no-repeat;
+  background-size: cover;
+}
+
+h1.header {
+  text-shadow:2px 2px 2px black;
+}
+
 @media (min-width:992px) {
 
     .breakfast
     {
-      border-right:1px solid #cdcdcd!important
+      border-right:1px solid #cdcdcd!important;
+      border-bottom-color: transparent;
+      }
+      .lunch {
+        border-bottom-color: transparent;
       }
       .tea
     {
-      border-left:1px solid #cdcdcd!important
+      border-left:1px solid #cdcdcd!important;
       }
 
 
     }
+
+    @media (min-width:320) {
+
+      .breakfast
+      {
+        border-bottom:1px solid #cdcdcd!important;
+        }
+        .lunch
+      {
+        border-bottom:1px solid #cdcdcd!important;
+        }
+
+
+      }
