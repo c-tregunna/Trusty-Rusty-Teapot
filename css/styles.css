@@ -8,15 +8,28 @@ h1.header {
   text-shadow:2px 2px 2px black;
 }
 
+
+  .breakfast
+  {
+    border-bottom:1px solid #cdcdcd!important;
+    }
+    .lunch
+  {
+    border-bottom:1px solid #cdcdcd!important;
+    }
+
+
+
+
 @media (min-width:992px) {
 
     .breakfast
     {
       border-right:1px solid #cdcdcd!important;
-      border-bottom-color: transparent;
+      border-bottom: none!important;
       }
       .lunch {
-        border-bottom-color: transparent;
+        border-bottom: none!important;
       }
       .tea
     {
@@ -25,17 +38,3 @@ h1.header {
 
 
     }
-
-    @media (min-width:320) {
-
-      .breakfast
-      {
-        border-bottom:1px solid #cdcdcd!important;
-        }
-        .lunch
-      {
-        border-bottom:1px solid #cdcdcd!important;
-        }
-
-
-      }
